@@ -11,7 +11,7 @@ It supports all kinds of payment transactions:
 
     ..Account charge (NG Banks)
 
-   .. Account charge (International for US and ZAR).
+    ..Account charge (International for US and ZAR).
 
     ..Card Charge (Bake in support for 3DSecure/PIN).
 
@@ -50,18 +50,12 @@ TRANSACTIONS
  """this is the getKey function that generates an encryption Key for you by passing your Secret Key as a parameter.""" which
  return a tuple of data.
  
- 
- def getKey(seckey):
-    hashedseckey = hashlib.md5(seckey.encode("utf-8")).hexdigest()
-    hashedseckeylast12 = hashedseckey[-12:]
-    seckeyadjusted = seckey.replace('FLWSECK-', '')
-    seckeyadjustedfirst12 = seckeyadjusted[:12]
-    return seckeyadjustedfirst12 + hashedseckeylast1
 
 
 ##Getting encrypted data
 To get the encrypted data,  """This is the encryption function that encrypts your payload by passing the text and your 
 encryption Key."""
+
 
 PAYMENT WITH CARD
 
@@ -70,9 +64,6 @@ encrypted_data = encryptData(key, json.dumps(data))
 
 
 We have our data which include
-    
-    
-    
     
     
     data = {
