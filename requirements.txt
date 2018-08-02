@@ -3,3 +3,4 @@ requests==2.19.1
 pycrypto==2.6.1
 gunicorn
 whitenoise
+coverage
