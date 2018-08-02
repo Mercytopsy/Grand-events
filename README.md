@@ -4,7 +4,7 @@ Flutterwave's rave implementation using python
 
 Grand-events is a web app based on booking of different varieties of events,you want us to handle through our website whereby you are to make payment where necessary
 
-Rave's API are HTTP based RESTful APIs. API request and response format are in JSON.Rave lets you receive payments locally and globally with no hassles and zero .....
+    Rave's API are HTTP based RESTful APIs. API request and response format are in JSON.Rave lets you receive payments locally and globally with no hassles and zero .....
 
 
 It supports all kinds of payment transactions:
@@ -37,11 +37,11 @@ INSTALLATION
 
 ##pip install flutterwave which installs some other additional features with it such as the pycypto
 
-from pyrave import Payment
-   
-rave_payment = Payment()
+    from pyrave import Payment
 
-data = {...}
+    rave_payment = Payment()
+
+    data = {...}
 
 
 TRANSACTIONS
@@ -59,8 +59,8 @@ encryption Key."""
 
 PAYMENT WITH CARD
 
-key = getKey(SECRET_KEY)
-encrypted_data = encryptData(key, json.dumps(data))
+    key = getKey(SECRET_KEY)
+    encrypted_data = encryptData(key, json.dumps(data))
 
 
 We have our data which include
@@ -79,15 +79,14 @@ We have our data which include
 ##We validates our payment by using an otp
 
 
-def validate_payment(transaction_reference, otp=None, ):
-    if not otp:
+    def validate_payment(transaction_reference, otp=None, ):
+     if not otp:
         otp = 'number'
         post_data = {
         "PBFPubKey": PUBLIC_KEY,
         "transaction_reference": transaction_reference, 
         "otp": otp
     }
-    
     r = requests.post(SANDBOX_VALIDATE_URL, data=post_data)
     print(r.text)
 
