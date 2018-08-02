@@ -2,9 +2,11 @@
 Flutterwave's rave implementation using python
 
 
-Grand-events is a web app based on booking of different varieties of events,you want us to handle through our website whereby you are to make payment where necessary
+    Grand-events is a web app based on booking of different varieties of events,
+    you want us to handle through our website whereby you are to make payment where necessary.
 
-    Rave's API are HTTP based RESTful APIs. API request and response format are in JSON.Rave lets you receive payments locally and globally with no hassles and zero .....
+    Rave's API are HTTP based RESTful APIs. API request and response format are in JSON.
+    Rave lets you receive payments locally and globally with no hassles and zero .....
 
 
 It supports all kinds of payment transactions:
@@ -46,15 +48,15 @@ INSTALLATION
 
 TRANSACTIONS
  
- ##Getting encryption key
- """this is the getKey function that generates an encryption Key for you by passing your Secret Key as a parameter.""" which
- return a tuple of data.
+     ##Getting encryption key
+     """this is the getKey function that generates an encryption Key for you by passing your Secret Key as a parameter.""" 
+     which return a tuple of data.
  
 
 
-##Getting encrypted data
-To get the encrypted data,  """This is the encryption function that encrypts your payload by passing the text and your 
-encryption Key."""
+    ##Getting encrypted data
+    To get the encrypted data,  """This is the encryption function that encrypts your payload by passing 
+    the text and your encryption Key."""
 
 
 PAYMENT WITH CARD
