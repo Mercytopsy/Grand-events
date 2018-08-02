@@ -1,0 +1,19 @@
+Django==2.0
+requests==2.19.1
+whitenoise
+# Flutterwave
+# six==1.11.0
+# pycrypto
+# certifi==2018.4.16
+# chardet==3.0.4
+# crypto==1.4.1
+# Django==2.0
+# Flutterwave==1.0.7
+# idna==2.7
+# Naked==0.1.31
+# pycrypto==2.6.1
+# pytz==2018.5
+# PyYAML==3.13
+# requests==2.19.1
+# shellescape==3.4.1
+# urllib3==1.23

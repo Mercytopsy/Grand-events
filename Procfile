@@ -1,0 +1,1 @@
+web: gunicorn grandevents.wsgi --log-file -
