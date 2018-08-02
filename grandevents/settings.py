@@ -15,7 +15,7 @@ SECRET_KEY = '01234567'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['grand-events.herokuapp.com']
 
 
 # Application definition
