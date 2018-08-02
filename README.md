@@ -49,6 +49,8 @@ TRANSACTIONS
  ##Getting encryption key
  """this is the getKey function that generates an encryption Key for you by passing your Secret Key as a parameter.""" which
  return a tuple of data.
+ 
+ 
  def getKey(seckey):
     hashedseckey = hashlib.md5(seckey.encode("utf-8")).hexdigest()
     hashedseckeylast12 = hashedseckey[-12:]
@@ -66,7 +68,13 @@ PAYMENT WITH CARD
 key = getKey(SECRET_KEY)
 encrypted_data = encryptData(key, json.dumps(data))
 
+
 We have our data which include
+    
+    
+    
+    
+    
     data = {
         "PBFPubKey": "enter your secret key",
         "cardno": "5438898014560229",
@@ -78,6 +86,8 @@ We have our data which include
         .
         
 ##We validates our payment by using an otp
+
+
 def validate_payment(transaction_reference, otp=None, ):
     if not otp:
         otp = 'number'
@@ -86,7 +96,7 @@ def validate_payment(transaction_reference, otp=None, ):
         "transaction_reference": transaction_reference, 
         "otp": otp
     }
-
+    
     r = requests.post(SANDBOX_VALIDATE_URL, data=post_data)
     print(r.text)
 
